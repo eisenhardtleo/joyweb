@@ -356,7 +356,7 @@ body {
   /* font-family: "Inter", sans-serif; */
   font-family: 'Rajdhani', sans-serif;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #progress {
@@ -553,7 +553,7 @@ header {
   font-family: 'fontawesome';
   font-style: normal;
   margin-top: 100vh;
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 0.3rem;
   color: rgb(9, 206, 9);
   z-index: 999;
@@ -561,6 +561,21 @@ header {
   bottom: 1%;
   right: 3%;
   text-shadow: 1.5px 1.5px 2px rgb(0, 0, 0);
+}
+
+.phone-mobile {
+  display: none;
+  font-family: 'fontawesome';
+  font-style: normal;
+  margin-top: 100vh;
+  font-size: 2rem;
+  padding: 0.3rem;
+  color: rgb(8, 95, 209);
+  z-index: 999;
+  position: fixed;
+  bottom: 9%;
+  right: 4.5%;
+  text-shadow: 1.5px 1.5px 2px  rgb(37, 37, 37);
 }
 
 .typewriter {
@@ -652,7 +667,7 @@ header {
     font-size: 1.263rem;
   }
 
-  .wa-mobile {
+  .wa-mobile, .phone-mobile {
     display: block;
 
   }
@@ -682,30 +697,21 @@ header {
 
 /* Poster */
 
- .poster {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    margin: 0;
-  }
+.poster {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin-top: 3%;
+}
 
-  .poster2 {
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
-    margin: 0;
-  }
-
-  #maps {
-    width: 100%;
-    height: 50vh;
-  }
-
-  #streetview {
-    width: 100%;
-    height: 50vh;
-  }
-
+.poster2 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  margin-top: 3%;
+}
 
 .poster__video {
   order: 1;
@@ -752,12 +758,31 @@ header {
     height: auto;
     margin: 0;
   }
+
+  .poster2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0%;
+    margin: 0;
+  }
+
+  #maps {
+    width: 100%;
+    height: 50vh;
+  }
+
+  #streetview {
+    width: 100%;
+    height: 50vh;
+  }
+
   .poster__video, .poster__video2,
   .poster__content, .poster__content2 {
     display: block;
     margin: 0;
     width: 100%;
     text-align: center;
+
   }
   .poster__content, .poster__content2 {
     height: 30%;
@@ -777,10 +802,11 @@ header {
   #video2 {
     margin-bottom: -15%;
   }
-  #internet{
+  #internet, #privacy, #cookie{
     padding-top: 4rem;
     /* padding-bottom: 4rem; */
   }
+
  
   #chisiamo, #dovesiamo {
    padding-top: 0 !important
@@ -814,7 +840,7 @@ header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("./images/bg-foto2.jpg") no-repeat center center;
   background-size: cover;
-  margin-top: 2%;
+  margin-top: 0;
 }
 
 .bg-cover__title {
@@ -946,6 +972,7 @@ iframe {
 
   #video1, #video2 {
   margin-top: -1.5rem;
+  margin-bottom: 1rem;
 }
 
   .typewriter {
@@ -1089,6 +1116,11 @@ iframe {
 .pre-footer {
   background-color: #0c5332;
   color: #fff;
+}
+
+#privacypolicy, #cookiepolicy{
+  text-decoration: underline;
+  color: white;
 }
 
 .form-container {
